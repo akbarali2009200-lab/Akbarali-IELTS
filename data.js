@@ -31,6 +31,13 @@ const LISTENING = [
 
 const READING = [
   {
+    date: "2026-07-02",
+    title: "Passage 1 — The Importance of Business Cards",
+    uz: "Biznes vizit kartochkalari haqida matn. True/False/Not Given va Note Completion — javob berib, natijangizni darhol ko'ring.",
+    tags: ["True/False/NG", "Note Completion", "Avto-tekshiruv"],
+    link: "reading-1-business-cards.html"
+  },
+  {
     date: "2026-06-29",
     title: "Crime & Punishment — Passage + Questions",
     uz: "Jinoyat va jazo mavzusidagi matn, Matching Headings va True/False/Not Given mashqlari.",

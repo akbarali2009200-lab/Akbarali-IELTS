@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading Passage 1 — The Importance of Business Cards | Akbarali IELTS</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .quiz-wrap{ max-width: 880px; margin: 0 auto; padding: 0 28px 80px; }
+  .passage-box{
+    border: 1.5px solid var(--ink);
+    background: var(--paper);
+    padding: 28px 30px;
+    margin: 30px 0;
+    font-size: .96rem;
+    line-height: 1.75;
+    column-count: 1;
+  }
+  .passage-box h2{
+    font-family: var(--font-display); color: var(--c-reading); font-size: 1.5rem; margin-top:0;
+  }
+  .passage-box .instr{
+    font-family: var(--font-mono); font-size:.72rem; color: var(--ink-soft);
+    letter-spacing:.03em; margin-bottom: 20px; display:block;
+  }
+  .passage-box p{ margin: 0 0 14px; text-align: justify; }
+
+  .qsection{ margin: 36px 0; }
+  .qsection h3{
+    font-family: var(--font-display); color: var(--ink); font-size: 1.3rem;
+    border-bottom: 1.5px solid var(--ink); padding-bottom: 8px; margin-bottom: 6px;
+  }
+  .qsection .qinstr{
+    font-family: var(--font-mono); font-size:.75rem; color: var(--ink-soft); margin-bottom: 18px; display:block;
+  }
+
+  .tfng-item{
+    border: 1px solid var(--line-strong);
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    background: var(--paper);
+  }
+  .tfng-item .qtext{ font-size: .94rem; margin: 0 0 12px; }
+  .tfng-item .qnum{ font-family: var(--font-mono); color: var(--c-reading); font-weight:600; margin-right:6px;}
+  .tfng-options{ display:flex; gap: 10px; flex-wrap: wrap; }
+  .tfng-options label{
+    font-family: var(--font-mono); font-size: .78rem;
+    border: 1px solid var(--line-strong); border-radius: 20px;
+    padding: 6px 14px; cursor:pointer; display:flex; align-items:center; gap:6px;
+    transition: all .12s ease;
+  }
+  .tfng-options input{ accent-color: var(--c-reading); }
+  .tfng-options label:hover{ border-color: var(--c-reading); }
+  .result-tag{
+    font-family: var(--font-mono); font-size: .72rem; margin-top: 10px; display:none;
+    padding: 4px 10px; border-radius: 3px; width: fit-content;
+  }
+
+  .note-block{
+    border: 1px solid var(--line-strong);
+    background: var(--paper);
+    padding: 24px 26px;
+    font-size: .95rem;
+    line-height: 2.1;
+  }
+  .note-block .bullet{ margin: 0 0 4px; }
+  .blank{
+    display:inline-block; width: 130px;
+    font-family: var(--font-mono); font-size: .85rem;
+    border: none; border-bottom: 2px solid var(--ink-soft);
+    background: transparent; padding: 2px 4px;
+    text-align:center; color: var(--ink);
+  }
+  .blank:focus{ outline:none; border-color: var(--c-reading); }
+  .qtag{ font-family: var(--font-mono); font-size:.7rem; color: var(--c-reading); font-weight:600; }
+
+  .check-bar{
+    position: sticky; bottom: 0;
+    background: var(--paper);
+    border-top: 2px solid var(--ink);
+    padding: 18px 0;
+    margin-top: 40px;
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px;
+    z-index: 10;
+  }
+  .score-display{
+    font-family: var(--font-mono); font-size: .95rem; color: var(--ink);
+  }
+  .score-display .big{ font-family: var(--font-display); font-size:1.6rem; color: var(--c-reading); font-weight:700; }
+  .btn-check{
+    font-family: var(--font-mono); font-size:.85rem; letter-spacing:.04em;
+    background: var(--c-reading); color:#fff; border: 1px solid var(--c-reading);
+    padding: 12px 24px; border-radius:3px; cursor:pointer;
+  }
+  .btn-check:hover{ background:#563a20; }
+  .btn-reset{
+    font-family: var(--font-mono); font-size:.78rem;
+    background: transparent; border: 1px solid var(--line-strong); color: var(--ink-soft);
+    padding: 10px 16px; border-radius:3px; cursor:pointer; margin-left: 10px;
+  }
+
+  .correct-mark{ background: #e3f0e2; border-color:#4c7a4c; color:#2f5a2f; }
+  .wrong-mark{ background: #f6e3e0; border-color:#a63a24; color:#a63a24; }
+  .blank.correct-mark{ border-bottom-color:#4c7a4c; color:#2f5a2f; background: #e3f0e2; }
+  .blank.wrong-mark{ border-bottom-color:#a63a24; color:#a63a24; background:#f6e3e0; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="index.html" class="brand">AKBARALI<span class="pipe">|</span>IELTS <small>Answer Booklet</small></a>
+    <nav class="nav-links">
+      <a href="listening.html">Listening</a>
+      <a href="reading.html" class="active">Reading</a>
+      <a href="writing.html">Writing</a>
+      <a href="speaking.html">Speaking</a>
+      <a class="tg-btn" href="https://t.me/akbarali2009" target="_blank" rel="noopener">Telegram →</a>
+    </nav>
+  </div>
+</header>
+
+<section class="skill-hero" style="border-color:var(--c-reading);">
+  <div class="wrap">
+    <span class="paper-no badge-color-reading">Paper 2 · Reading — Passage 1</span>
+    <h1>The Importance of Business Cards</h1>
+    <p class="uz-sub">True/False/Not Given va Note Completion mashqi</p>
+    <p class="desc">13 ta savol — javob berib, pastdagi "Tekshirish" tugmasini bosing. Natija va to'g'ri javoblar darhol ko'rsatiladi.</p>
+  </div>
+</section>
+
+<div class="quiz-wrap">
+
+  <div class="passage-box">
+    <span class="instr">You should spend about 20 minutes on Questions 1–13.</span>
+    <h2>The Importance of Business Cards</h2>
+    <p>The exchanging of business cards is as close to a universal ritual as you can find in the business world.</p>
+    <p>The ritual may be universal, but the details of business cards and how they are swapped vary across countries. Americans throw their cards casually across a table; the Japanese make the exchange of cards a formal ceremony. While there are cards that are discreet and understated, others are crammed full of details and titles. Some business people hand out 24-carat gold cards, and there are kindergarten children who have cards with not only their own contact details but also with the job descriptions of their parents and even grandparents. This practice has become so common in parts of New York, for example, that the use of such cards is now prohibited by some of these institutions.</p>
+    <p>Cards have been around a long time in one form or another. The Chinese invented calling cards in the 15th century to give people notice that they intended to pay them a visit, but these were for social purposes only. Then, in the 17th century, European business people invented a new type of card to act as miniature advertisements, signaling the advent of the business card. In today's world, business cards can cause people to have strong emotional reactions. According to one experienced company director, very few things can provoke more heated discussion at a board meeting than the composition of the company's business cards.</p>
+    <p>Lots of companies try to promote themselves by altering the form of the card. Employees at one famous toy company give out little plastic figures with their contact details stamped on them. One fast food company has business cards which are shaped like a portion of French fries. A Canadian divorce lawyer once gave out a card that could be torn in two — one half for each of the spouses. For many business commentators, such gimmicky business cards prove that the use of a physical business card is nearly at an end. After all, why bother exchanging bits of thick paper at all when you can simply swap electronic versions by smartphone.</p>
+    <p>However, one can just as well argue the opposite: that business cards are here to stay, and in a business world full of meetings and correspondence, it is more important than ever that your card is unique. Attempts to reinvent business cards for the digital age have not been successful. Even at the latest technology conferences, people still greet each other by handing out little rectangles made from paper rather than using a digital alternative.</p>
+    <p>To understand business cards, it is necessary to understand how business works. That business cards are thriving in a digital age is a forceful reminder that there is much about business that is timeless. According to Kate Jones, a business lecturer, there is one eternal and inescapable issue. Her 2006 study of more than 200 business executives in North America found that trust was the key element for running a successful business. It is vital to be able to look someone in the eye and decide what sort of person they are.</p>
+    <p>In this way, you can transform acquaintanceship into relationships. A good proportion of business life will always be about building social connections — having dinner or playing sport with clients and colleagues — and while computers can deal with administrative tasks, it is human beings that have to focus on the emotional.</p>
+    <p>The rapid advance of globalization means that this relationship-building process is becoming ever more demanding. Managers have to put more effort in when dealing with international counterparts, especially when there is not a common language, which is so often the case these days. A recent UK survey showed that chief executives of global organizations now routinely spend three out of every four weeks on international travel. It is in these situations that business cards are doubly useful, as they are a quick way of establishing connections. Cards can also remind you that you have actually met someone in a face-to-face meeting rather than just searched for them on the internet. Looking through piles of different cards can enhance your memory in ways that simply looking through uniform electronic lists would never do.</p>
+    <p>Janet McIntyre is a leading expert on business cards in today's world. She maintains that as companies become more complex, cards are essential in determining the exact status of every contact you meet in multinational corporations. Janet also explains how exchanging business cards can be an effective way of initiating a conversation because it gives people a ritual to follow when they first meet a new business contact.</p>
+    <p>The business world is obsessed with the idea of creating and inventing new things that will change the way we do everything, and this does lead to progress. But there are lots of things that do not need to be changed, and in Janet McIntyre's view, tradition also has an equally valuable role to play. Therefore, the practice of exchanging business cards is likely to continue in the business world.</p>
+  </div>
+
+  <form id="quizForm">
+    <div class="qsection">
+      <h3>Questions 1–5</h3>
+      <span class="qinstr">Do the following statements agree with the information given in the passage? TRUE / FALSE / NOT GIVEN</span>
+      <div id="tfng-container"></div>
+    </div>
+
+    <div class="qsection">
+      <h3>Questions 6–13</h3>
+      <span class="qinstr">Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.</span>
+      <div class="note-block">
+        <p class="bullet"><strong>Kate Jones's research</strong></p>
+        <p class="bullet">• The most important aspect of business is having <span class="qtag">Q6</span> <input class="blank" type="text" data-q="6" autocomplete="off"> in others.</p>
+        <p class="bullet">• <span class="qtag">Q7</span> <input class="blank" type="text" data-q="7" autocomplete="off"> do not have the ability to establish the good relationships essential to business.</p>
+        <p class="bullet" style="margin-top:16px;"><strong>Business and globalisation</strong></p>
+        <p class="bullet">• Managers must work harder when they don't share the same <span class="qtag">Q8</span> <input class="blank" type="text" data-q="8" autocomplete="off"> with their contacts.</p>
+        <p class="bullet">• A UK survey indicates that <span class="qtag">Q9</span> <input class="blank" type="text" data-q="9" autocomplete="off"> takes up the largest part of business leaders' time.</p>
+        <p class="bullet">• A business person's <span class="qtag">Q10</span> <input class="blank" type="text" data-q="10" autocomplete="off"> of a meeting can be improved by looking at business cards.</p>
+        <p class="bullet" style="margin-top:16px;"><strong>Janet McIntyre</strong></p>
+        <p class="bullet">• Business cards clearly show the <span class="qtag">Q11</span> <input class="blank" type="text" data-q="11" autocomplete="off"> of each person in a large company.</p>
+        <p class="bullet">• The ritual of swapping business cards is a good way of starting a <span class="qtag">Q12</span> <input class="blank" type="text" data-q="12" autocomplete="off"> at the beginning of a business relationship.</p>
+        <p class="bullet">• Janet feels that in the business world, <span class="qtag">Q13</span> <input class="blank" type="text" data-q="13" autocomplete="off"> is just as important as innovation.</p>
+      </div>
+    </div>
+  </form>
+
+  <div class="check-bar">
+    <div class="score-display" id="scoreDisplay">Javoblarni belgilab, "Tekshirish" tugmasini bosing.</div>
+    <div>
+      <button class="btn-check" id="checkBtn">Tekshirish</button>
+      <button class="btn-reset" id="resetBtn">Qayta boshlash</button>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <span class="fnote">© 2026 Akbarali | IELTS · Namangan, O'zbekiston</span>
+    <span class="fnote">Telegram: <a href="https://t.me/akbarali2009" target="_blank" rel="noopener">@akbarali2009</a></span>
+  </div>
+</footer>
+
+<script>
+const TFNG_QUESTIONS = [
+  { q: 1, text: "Children's business cards have been banned in some kindergartens.", answer: "TRUE" },
+  { q: 2, text: "It was the Chinese who first began the practice of using business cards.", answer: "FALSE" },
+  { q: 3, text: "Designing business cards can be a controversial process for some companies.", answer: "TRUE" },
+  { q: 4, text: "A famous toy company has boosted its sales by using one type of unusual business card.", answer: "NOT GIVEN" },
+  { q: 5, text: "Some business commentators predict a decline in the use of paper business cards.", answer: "TRUE" }
+];
+
+const NOTE_ANSWERS = {
+  6: "trust",
+  7: "computers",
+  8: "language",
+  9: "travel",
+  10: "memory",
+  11: "status",
+  12: "conversation",
+  13: "tradition"
+};
+
+const tfContainer = document.getElementById("tfng-container");
+TFNG_QUESTIONS.forEach(item => {
+  const div = document.createElement("div");
+  div.className = "tfng-item";
+  div.innerHTML = `
+    <p class="qtext"><span class="qnum">Q${item.q}.</span>${item.text}</p>
+    <div class="tfng-options">
+      <label><input type="radio" name="q${item.q}" value="TRUE"> TRUE</label>
+      <label><input type="radio" name="q${item.q}" value="FALSE"> FALSE</label>
+      <label><input type="radio" name="q${item.q}" value="NOT GIVEN"> NOT GIVEN</label>
+    </div>
+    <div class="result-tag" id="result-q${item.q}"></div>
+  `;
+  tfContainer.appendChild(div);
+});
+
+document.getElementById("checkBtn").addEventListener("click", function(e){
+  e.preventDefault();
+  let correctCount = 0;
+  const total = 13;
+
+  TFNG_QUESTIONS.forEach(item => {
+    const selected = document.querySelector(`input[name="q${item.q}"]:checked`);
+    const resultTag = document.getElementById(`result-q${item.q}`);
+    const itemBox = resultTag.closest(".tfng-item");
+    resultTag.style.display = "block";
+    if(selected && selected.value === item.answer){
+      correctCount++;
+      resultTag.textContent = "✓ To'g'ri";
+      resultTag.className = "result-tag correct-mark";
+      itemBox.style.borderColor = "#4c7a4c";
+    } else {
+      resultTag.textContent = selected ? `✗ Noto'g'ri — to'g'ri javob: ${item.answer}` : `Javob berilmagan — to'g'ri javob: ${item.answer}`;
+      resultTag.className = "result-tag wrong-mark";
+      itemBox.style.borderColor = "#a63a24";
+    }
+  });
+
+  Object.keys(NOTE_ANSWERS).forEach(qnum => {
+    const input = document.querySelector(`.blank[data-q="${qnum}"]`);
+    const userVal = input.value.trim().toLowerCase();
+    const correctVal = NOTE_ANSWERS[qnum];
+    if(userVal === correctVal){
+      correctCount++;
+      input.classList.add("correct-mark");
+      input.classList.remove("wrong-mark");
+    } else {
+      input.classList.add("wrong-mark");
+      input.classList.remove("correct-mark");
+      input.title = `To'g'ri javob: ${correctVal}`;
+    }
+  });
+
+  const scoreDisplay = document.getElementById("scoreDisplay");
+  const percent = Math.round((correctCount/total)*100);
+  scoreDisplay.innerHTML = `Natija: <span class="big">${correctCount}/${total}</span> (${percent}%)`;
+});
+
+document.getElementById("resetBtn").addEventListener("click", function(){
+  document.getElementById("quizForm").reset();
+  document.querySelectorAll(".result-tag").forEach(t => t.style.display = "none");
+  document.querySelectorAll(".tfng-item").forEach(el => el.style.borderColor = "");
+  document.querySelectorAll(".blank").forEach(el => { el.classList.remove("correct-mark","wrong-mark"); el.title=""; });
+  document.getElementById("scoreDisplay").textContent = "Javoblarni belgilab, \"Tekshirish\" tugmasini bosing.";
+});
+</script>
+
+</body>
+</html>
